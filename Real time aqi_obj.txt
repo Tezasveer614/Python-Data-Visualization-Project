@@ -1,0 +1,29 @@
+Pollutant Distribution:
+Objective: Analyze the distribution of average pollution levels for key pollutants.
+Tasks: For each major pollutant_id, visualize the distribution of pollutant_avg.
+Potential Charts: Histograms or Density Plots for pollutant_avg (one per pollutant or overlaid). Box Plots showing the distribution of pollutant_avg for each pollutant_id.
+
+State-Level Comparison:
+Objective: Identify states with the highest and lowest average pollution levels for a specific pollutant (e.g., PM2.5, O3).
+Tasks: Calculate the average pollutant_avg grouped by state for a chosen pollutant_id.
+Potential Charts: Bar Chart (Average pollution vs. State), Box Plot (Distribution of pollutant_avg per state).
+
+City-Level Comparison (Within a State or Overall):
+Objective: Compare average pollution levels across different cities, either nationally or within a specific state.
+Tasks: Calculate the average pollutant_avg grouped by city (and potentially state) for a chosen pollutant_id. Identify top N most/least polluted cities.
+Potential Charts: Bar Chart (Average pollution vs. City), Horizontal Bar Chart (if many cities).
+
+Station-Level Hotspots:
+Objective: Identify specific monitoring stations with consistently high or low pollutant readings for a specific pollutant.
+Tasks: Find the stations with the highest/lowest average pollutant_avg for a chosen pollutant_id.
+Potential Charts: Bar Chart showing top/bottom N stations.
+
+Dominant Pollutants:
+Objective: Determine which pollutants generally have the highest average readings across the dataset or within specific regions.
+Tasks: Calculate the overall average pollutant_avg for each pollutant_id. You might need to normalize data if units are different and you want a relative comparison, but comparing raw averages is a start.
+Potential Charts: Bar Chart (Overall Average Level vs. Pollutant ID).
+
+Pollutant Variability Analysis:
+Objective: Analyze the range (variability) of pollutant levels (pollutant_max - pollutant_min) and see how it differs across pollutants or locations.
+Tasks: Calculate a new column pollutant_range = pollutant_max - pollutant_min. Analyze the average range by pollutant_id or by state/city.
+Potential Charts: Bar Chart (Average Range vs. Pollutant ID/State/City), Scatter Plot (pollutant_range vs. pollutant_avg).
